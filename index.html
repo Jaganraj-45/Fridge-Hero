@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍳 Fridge Hero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./main-CKA6AxLw.js"></script>
+    <link rel="modulepreload" crossorigin href="./style-BPysieQ0.js">
+    <link rel="stylesheet" crossorigin href="./style-q_WNSESN.css">
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="header">
+        <h1>🍳 Fridge Hero</h1>
+        <p>Turn what's in your fridge into a delicious meal!</p>
+      </header>
+      
+      <main class="main-content" id="mainView">
+        <div class="settings-card shadow-glass">
+          <label for="apiKey">Gemini API Key</label>
+          <input type="password" id="apiKey" placeholder="Enter your Gemini API key..." autocomplete="off" />
+        </div>
+
+        <div class="input-card shadow-glass">
+          <h2>What's in your fridge?</h2>
+          
+          <div class="input-section">
+            <h3>Main Ingredients</h3>
+            <div class="ingredients-inputs">
+              <input type="text" id="ingredient1" class="ingredient-input" placeholder="Ingredient 1 (e.g., Chicken)" />
+              <input type="text" id="ingredient2" class="ingredient-input" placeholder="Ingredient 2 (e.g., Rice)" />
+              <input type="text" id="ingredient3" class="ingredient-input" placeholder="Ingredient 3 (e.g., Broccoli)" />
+            </div>
+          </div>
+
+          <div class="input-section">
+            <h3>Basic Masalas</h3>
+            <div class="checkbox-group" id="basicMasalas">
+              <label class="checkbox-label"><input type="checkbox" value="Chili Powder" checked> Chili Powder</label>
+              <label class="checkbox-label"><input type="checkbox" value="Turmeric Powder" checked> Turmeric Powder</label>
+              <label class="checkbox-label"><input type="checkbox" value="Coriander Powder"> Coriander Powder</label>
+              <label class="checkbox-label"><input type="checkbox" value="Salt" checked> Salt</label>
+            </div>
+          </div>
+
+          <div class="input-section">
+            <h3>Other Spices</h3>
+            <div class="checkbox-group" id="otherSpices">
+              <label class="checkbox-label"><input type="checkbox" value="Cumin"> Cumin</label>
+              <label class="checkbox-label"><input type="checkbox" value="Mustard Seeds"> Mustard Seeds</label>
+              <label class="checkbox-label"><input type="checkbox" value="Garam Masala"> Garam Masala</label>
+              <label class="checkbox-label"><input type="checkbox" value="Cinnamon"> Cinnamon</label>
+              <label class="checkbox-label"><input type="checkbox" value="Cardamom"> Cardamom</label>
+              <label class="checkbox-label"><input type="checkbox" value="Cloves"> Cloves</label>
+            </div>
+          </div>
+          
+          <button id="cookBtn" class="btn-primary">
+            <span class="btn-text">Cook Magic ✨</span>
+          </button>
+        </div>
+
+        <div id="loading" class="loading-state hidden">
+          <div class="spinner"></div>
+          <p>Cooking up some magic...</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
